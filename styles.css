@@ -1,0 +1,352 @@
+@font-face {
+    font-family: Europa-bold;
+    src: url(fonts/Europa-Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* BACKGROUND-VIDEO-START */
+
+.bg-video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+@media (max-aspect-ratio:16/9) {
+    .bg-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .bg-video {
+        display: none;
+    }
+    .home-page {
+        background-image: url(assets/bg-img-2.jpg);
+        background-position-x: center;
+        background-position-y: top;
+        background-size: cover;
+        height: 100vh !important;
+        width: 100%;
+    }
+}
+
+@media (min-aspect-ratio:16/9) {
+    .bg-video {
+        width: 100%;
+        height: auto;
+    }
+    .profile-card img {
+        width: auto;
+    }
+}
+
+
+/* pre-defined css classes  */
+
+.white {
+    color: white !important;
+}
+
+.purple {
+    color: #794df8 !important;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+
+/* BACKGROUND-VIDEO-END */
+
+
+/* NAVIGATION-BAR -START*/
+
+nav a {
+    font-weight: 500 !important;
+}
+
+.nav-link:hover {
+    color: #E5CAA2 !important;
+}
+
+.dropdown-menu:hover,
+.dropdown-item:hover {
+    background-color: #E5CAA2 !important;
+}
+
+.dropdown-item {
+    color: black !important;
+}
+
+.nav-link,
+.dropdown-item {
+    font-size: 20px !important;
+}
+
+
+/* NAVIGATION-END */
+
+
+/* HOME-PAGE-START */
+
+.home-page h1,
+.col-lg-9 h4,
+nav a {
+    font-family: Europa-bold !important;
+}
+
+h1 span {
+    color: #E5CAA2 !important;
+}
+
+h1 {
+    font-size: 64px !important;
+}
+
+.home-page {
+    position: relative;
+    height: 121.5vh;
+    width: 100%;
+    /* background-image: linear-gradient(#292e38a2, #292e38a2); */
+}
+
+.head-cnt-1,
+.head-cnt-2 {
+    margin-bottom: 7.813rem !important;
+}
+
+.home-section {
+    height: 100vh;
+}
+
+.card {
+    flex-direction: row !important;
+}
+
+
+/* .ques {
+    font-size: 20px;
+} */
+
+.card p,
+.service-card p {
+    color: #717374 !important;
+}
+
+.home-page .btn {
+    padding: 12px 20px !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    background-color: #794df8 !important;
+}
+
+.home-page .btn:hover {
+    background-color: #412A81 !important;
+}
+
+.mobile-content {
+    display: none;
+}
+
+.mobile-profile {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-btn {
+    border-radius: 30px !important;
+}
+
+.mobile-btn:hover {
+    background-color: #412A81;
+}
+
+
+/* HOME-PAGE-END */
+
+
+/* LOGO-SECTION-START */
+
+.logo {
+    width: 150px !important;
+}
+
+.enfo {
+    width: 50px !important;
+}
+
+.logo-section h5 {
+    color: rgb(66, 66, 66) !important;
+}
+
+.logo-section h6,
+.logo-section h5 {
+    font-weight: 400;
+}
+
+
+/* LOGO-SECTION-END */
+
+
+/* CUSTOMER-SUPPORT-START */
+
+footer {
+    background-color: #f8f8f8 !important;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: #794df8;
+}
+
+
+/* CUSTOMER-SUPPORT-END*/
+
+
+/* SERVICE-SECTION-START */
+
+.service-page {
+    background-image: url(assets/service-2.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh !important;
+}
+
+.service-section {
+    height: 80vh;
+}
+
+.service-card h3,
+.engagement-section h3 {
+    font-weight: 600;
+}
+
+.service-card li {
+    list-style-type: none;
+}
+
+.service-card p {
+    margin-bottom: 2.1875rem;
+}
+
+.logo-section .btn,
+.form-section .btn {
+    color: #794df8;
+    border-color: #794df8;
+    border: 2.75px solid;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.logo-section .btn:hover,
+.form-section .btn:hover {
+    background-color: #794df8;
+    color: white !important;
+}
+
+.engagement-section p,
+.logo-section h6,
+.model-card p {
+    color: #6F7172;
+}
+
+.model-section h6 {
+    font-size: 15px;
+}
+
+.model-card p {
+    font-size: 14px;
+}
+
+.about-page {
+    background-image: url(assets/about-bg.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh !important;
+}
+
+input {
+    border-radius: 0px !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+
+.body {
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width:576px) {
+    h1 {
+        font-size: 32px !important;
+    }
+    .home-section {
+        height: 80vh;
+        margin-top: 60px !important;
+        padding: 0 8px !important;
+        justify-content: flex-end;
+    }
+    .profile-card {
+        display: none;
+    }
+    .mobile-content {
+        display: block !important;
+    }
+    .head-cnt-1 {
+        margin-bottom: 1rem !important
+    }
+    .logo-section {
+        display: flex;
+        justify-content: center;
+    }
+    .logo-section h5 {
+        font-size: 18px !important;
+    }
+    .logo,
+    .enfo {
+        margin-right: 0.5rem;
+    }
+    .ge {
+        margin-left: 0.5rem;
+    }
+    .model-section .col-lg-1 {
+        display: none !important;
+    }
+    .service-section {
+        display: flex;
+    }
+    .service-section .content,
+    .service-card .col-lg-3 {
+        margin-bottom: 3rem;
+    }
+    .model-section .model-card {
+        margin-bottom: 2rem;
+    }
+    .form-section .col-lg-7,
+    .form-section .col-lg-3,
+    .service-section,
+    .logo-section,
+    .home-section {
+        text-align: center;
+    }
+    .form-section .col-lg-3 .d-flex,
+    .forum .row {
+        justify-content: center;
+    }
+}
